@@ -1,0 +1,23 @@
+name: SugarCRM MLP Builder
+version: "1.0"
+author: Hasan Ghazzawi
+about: CLI Tool that builds a sugar module loadable package using a list of files from a sugar directory
+args:
+    - files:
+        short: f
+        value_name: FILE
+        help: File to use to build the package
+        takes_value: true
+    - name:
+        short: n
+        value_name: NAME
+        help: Name of package to generate
+        takes_value: true
+    - version:
+        short: v
+        value_name: VERSION
+        help: Version of the mlp being built
+    - instance:
+        short: i
+        value_name: INSTANCE
+        help: Name of SugarCRM folder

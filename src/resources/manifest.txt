@@ -1,0 +1,27 @@
+<?php
+
+    $manifest = array(
+        'acceptable_sugar_flavors' => array('CE','PRO','CORP','ENT','ULT'),
+        'acceptable_sugar_versions' => array(
+            'exact_matches' => array(),
+            'regex_matches' => array('(.*?)\\.(.*?)\\.(.*?)$'),
+        ),
+        'author' => '__author__',
+        'description' => '__description__',
+        'icon' => '',
+        'is_uninstallable' => true,
+        'name' => '__name__',
+        'published_date' => '__published_date__',
+        'type' => 'module',
+        'version' => '__version__',
+    );
+
+    $installdefs = array(
+        'id' => '__package_id__',
+
+		'copy' => array(
+            __copy__
+        )
+    );
+
+?>
