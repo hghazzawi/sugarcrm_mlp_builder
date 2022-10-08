@@ -8,11 +8,13 @@ args:
         value_name: FILE
         help: File to use to build the package
         takes_value: true
+        required: true
     - name:
         short: n
         value_name: NAME
         help: Name of package to generate
         takes_value: true
+        required: true
     - version:
         short: v
         value_name: VERSION
@@ -21,3 +23,4 @@ args:
         short: i
         value_name: INSTANCE
         help: Name of SugarCRM folder
+        required: true
